@@ -2,19 +2,19 @@
 
 # Assignment 2:Furniture Manufacturing and OrderingSystem
 
-Inthishomework,youareexpectedtoimplementa“FurnitureManufacturingandOrdering
-System” application using Java. This homework willcover the topics given below;
+In this homework,you are expected to implement a “Furniture Manufacturing and Ordering
+System” application using Java. This homework will cover the topics given below;
 
 1. Strings, Arrays, Generics
 2. Queue ADT (Abstract Data Type)
 3. Stack ADT (Abstract Data Type)
 
 Assume that you are a Furniture Manufacturer called “ _IZTECHEA_ ”, that manufactures
-differenttypesoffurniture.However,youimmediatelymanufacturefurnitureaccordingtothe
-orderthatcomesfromyour **_MarketingAnalyst_** andyoustoreitin **onefactoryline** thatis
-basedonaFirst-In-First-Out(FIFO)structure. **_MarketingAnalyst_** randomlygenerateswhat
-tobe producedand sendsthe requesttothe “ _IZTECHEA”_ .Yourfactorymanufactures 6
-different types of products, where all of them mustimplement the **IProduct interface** ;
+different types of furniture.However,you immediatel ymanufacture furniture according to the
+order that comes fromy our **_MarketingAnalyst_** and you store it in **one factory line** that is
+based on a First-In-First-Out(FIFO) structure. **_MarketingAnalyst_** randomly generates what
+to be produced and sends the request to the “ _IZTECHEA”_ .Your factory manufactures 6
+different types of products, where all of them must implement the **IProduct interface** ;
 
 1. Sofa
 2. Bed
@@ -31,25 +31,25 @@ public interface IProduct {
 ● public boolean isSold();
 }
 ```
-Whenyoumanufactureaproduct,itistemporarilystoredinthefactory(productionline)until
-the **_StorageChief_** moves(i.e.,“stores”)itintoawarehouse.Notethat,ateachrequest,the
-**_StorageChief_** _takes_ oneproductfromthefactoryline,i.e.queue,andstoreseachproduct
+When you manufacture a product, it is temporarily stored in the factory (productionline) until
+the **_StorageChief_** moves(i.e.,“stores”) it into a warehouse.Note that,a teach request,the
+**_StorageChief_** _takes_ one product from the factoryline,i.e.queue, and stores each product
 in its own warehouse. Thereby, you will have **six warehouses**. The warehouses are
-designedtoretrievethefirstproductthathasbeenrecentlyaddedtoyourwarehouse.In
+designed to retrieve the first product that has bee nrecently added to your warehouse.In
 other words, furniture is stored in Last-In-First-Out(LIFO) order.
 
-Whena **_customer_** comes tobuyanyfurniture,thatfurnitureisdecidedrandomly,anda
-**_customer_** requestisformed accordingly.Basedon therequestedfurniture, youfindthe
-correspondingwarehouseandremove/popitfromthewarehousetosellittothecustomer.If
-youdon’thavetherequestedproductintherespectivewarehouse,youshouldreturna _FAIL_
-message.Ifyouhave it,youshould returna _SUCCESS_ message. _FAIL_ and _SUCCESS_
-messages work in the same way for the marketing analystand storage.
+Whena **_customer_** comes to buy any furniture,that furniture is decided randomly,and a
+**_customer_** request is formed accordingly.Based on the requested furniture, you find the
+corresponding warehouse and remove/pop it from the warehouse to sell it to the customer.If
+you don’t have the requested product in the respective warehouse, you should return a _FAIL_
+message. If you have it, yous hould return a _SUCCESS_ message. _FAIL_ and _SUCCESS_
+messages work in the same way for the marketing analyst and storage.
 
 
-Writeasimulationthatrandomlyreceivesrequestsfrom **_MarketingAnalyst_** , **_StorageChief_** ,
-and **_Customer_** .Thereisonlyoneobjectrepresentingeachrole. **Youshouldonlyaskthe
-usertoenterasingleinputthatisthenumberofrequestsforthesimulation.** Afterall
-therequestsarecompleted,youshouldprintareportthatshowsthenumberofproductsin
+Write a simulation that randomly receives requests from **_MarketingAnalyst_** , **_StorageChief_** ,
+and **_Customer_** .There is only one object representing each role. **You should only ask the
+user to enter a single input that is the number of requests for the simulation.** After all
+the requests are completed, you should print a report that shows the number of products in
 the factory, in the warehouse, and that is sold.
 
 # The main structure of the program is given as a pseudocode:
